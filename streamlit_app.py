@@ -109,3 +109,4 @@ if uploaded_file is not None:
         """)
 else:
     st.info("⬆️ Bitte lade eine `.fit`-Datei hoch, um deine Bestwerte zu berechnen.")
+
