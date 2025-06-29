@@ -33,10 +33,6 @@ def estimate_critical_power(profile):
     coeffs = np.polyfit(X, powers, 1)
     return coeffs[1]  # y-Achsenabschnitt = Critical Power
 
-# Streamlit UI
-
-uploaded_file = st.file_uploader('FIT-Datei hochladen', type=['fit'],
-
 if uploaded_file:
     df = read_fit_power_data(uploaded_file)
     if df.empty:
