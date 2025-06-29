@@ -34,7 +34,7 @@ def estimate_critical_power(profile):
     return coeffs[1]  # y-Achsenabschnitt = Critical Power
 
 # Streamlit UI
-st.title('Power Profile & Critical Power Analyse')
+
 uploaded_file = st.file_uploader('FIT-Datei hochladen', type=['fit'], help='Aktivität mit Power-Daten')
 
 if uploaded_file:
