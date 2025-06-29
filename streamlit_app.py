@@ -1,9 +1,3 @@
-import streamlit as st
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from fitparse import FitFile
-
 def read_fit_power_data(uploaded_file):
     """Liest Leistungsdaten aus FIT-Datei"""
     fitfile = FitFile(uploaded_file)
